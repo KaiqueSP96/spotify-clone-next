@@ -1,5 +1,6 @@
 "use client";
 
+import { AiOutlinePlus } from "react-icons/ai";
 import { TbPlaylist } from "react-icons/tb";
 
 const Library = () => {
@@ -25,9 +26,36 @@ const Library = () => {
                     gap-x-2
                 ">
 
-                    <TbPlaylist size={26}/>
-                    
+                    <TbPlaylist className="text-neutral-400" size={26} />
+                    <p
+                        className="
+                        text-neutral-400
+                        cursor-pointer
+                        font-medium
+                        text-md 
+                    ">
+                        Your Library
+                    </p>
                 </div>
+                <AiOutlinePlus
+                    onClick={onClick}
+                    size={19}
+                    className="
+                    cursor-pointer
+                    text-neutral-400
+                    hover:text-white
+                    transition
+                "
+                />
+            </div>
+            <div className="
+                flex
+                flex-col
+                gap-y-2
+                mt-4
+                px-3
+            ">
+                List of Songs!
             </div>
         </div>
     )

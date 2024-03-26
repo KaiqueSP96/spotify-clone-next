@@ -1,7 +1,22 @@
+import Header from "@/components/Header";
+
 export default function Home() {
   return (
-   <div>
-      <p className="text-green-500">Sporify Clone!</p>
-   </div>
+    <div className="
+    bg-neutral-900
+    rounded-lg
+    h-full
+    w-full
+    overflow-hidden
+    overflow-y-auto
+   ">
+
+      <Header>
+        <div className="mb-2">
+          <h1>Welcome back!</h1>
+        </div>
+      </Header>
+
+    </div>
   );
 }

@@ -13,7 +13,7 @@ interface SidebarProps {
 }
 
 const Sidebar: React.FC<SidebarProps> = ({
-     children
+    children
 }) => {
 
     const pathname = usePathname();
@@ -35,8 +35,8 @@ const Sidebar: React.FC<SidebarProps> = ({
 
     return (
         <div className="flex h-full">
-            <div 
-            className="
+            <div
+                className="
                 hidden
                 md:flex
                 flex-col
@@ -47,8 +47,8 @@ const Sidebar: React.FC<SidebarProps> = ({
                 p-2
             ">
                 <Box>
-                    <div 
-                    className="
+                    <div
+                        className="
                       flex
                       flex-col
                       gap-y-4
@@ -56,16 +56,16 @@ const Sidebar: React.FC<SidebarProps> = ({
                       py-4  
                     "
                     >
-                      {routes.map((item) =>  (
-                        <SidebarItem
-                            key={item.label}
-                            {...item}
-                         />
-                      ))}      
+                        {routes.map((item) => (
+                            <SidebarItem
+                                key={item.label}
+                                {...item}
+                            />
+                        ))}
                     </div>
                 </Box>
                 <Box className="overflow-y-auto h-full">
-                   <Library/>
+                    <Library />
                 </Box>
             </div>
             <main className="h-full flex-1 overflow-y-auto py-2">
